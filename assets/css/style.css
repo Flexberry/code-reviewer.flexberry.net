@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.gradient-box {
+  background: linear-gradient(90deg, #25D838, #710FD8);
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.card-box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #26262626;
+  box-shadow: 0 4px 12px #0000000F;
+  height: 100%;
+  max-width: 850px;
+}
+
+.btn-gradient:hover {
+  background-color: #e6e6e6;
+  color: #5d0cbb;
+}
+
+.btn {
+  border-radius: 15px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.start-btn {
+  background-color: #710FD9;
+  color: #ffffff;
+}
+
+.start-btn:hover {
+  background-color: #5d0cbb;
+}
+
+.header-btn {
+  background-color: #25D838;
+  color: #ffffff;
+}
+
+.header-btn:hover {
+  background-color: #1bbb2b;
+}
+
+.btn-gradient {
+  background-color: #ffffff;
+  color: #710FD8;
+}
+
+.btn-gradient:hover {
+  background-color: #f3f3f3;
+}
+
+
+.analyse-purple {
+  background-color: #710fd826;
+}
+
+.analyse-green {
+  background-color: #25d83826;
+}
+
+.analyse-dark {
+  background-color: #30343426;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  .gradient-box {
+    padding: 40px 0;
+  }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+.header {
+  border-bottom: 1px solid #30343434;
+  box-shadow: 0 12px 12px #0000000F;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+.header.visible {
+  top: 0;
+}
+
+.footer-text {
+  color: #710FD8;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}

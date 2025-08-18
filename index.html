@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexberry AI Code Reviewer</title>
+  <link rel="icon" type="image/ico" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-white sticky-top header">
+    <div class="container">
+      <img src="assets/img/logo-black.svg" alt="AI Assistant" height="40" class="pb-2 pb-lg-0">
+      <div class="btn-group" role="group">
+        <button class="btn mr-2 start-btn px-3" data-toggle="modal" data-target="#send-modal1">Демо</button>
+        <button class="btn header-btn px-3" data-toggle="modal" data-target="#send-modal">Купить</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Главный блок -->
+  <section class="gradient-box py-lg-5 py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-left text-center">
+          <div class="pb-4">
+            <img src="assets/img/logo.svg" alt="AI Code Reviewer" class="img-fluid">
+          </div>
+          <h1>AI Code Reviewer для GitLab — автоматический анализ кода в реальном времени прямо в GitLab.</h1>
+          <p class="mt-3">Мгновенно оценивает каждую правку, выявляет ошибки и предлагает улучшения, экономя
+            часы работы команды.</p>
+          <button class="btn start-btn px-3 mr-3" data-toggle="modal" data-target="#send-modal1">Демо</button>
+          <button class="btn btn-gradient px-3" data-toggle="modal" data-target="#send-modal">Купить</button>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/reviewer.png" alt="Demo AI Code Reviewer" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок 1: Как анализирует -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center mb-5">
+        <h2 class="text-lg-right col-lg-6 col-12">Как AI Code Reviewer анализирует код</h2>
+        <p class="border-left text-left col-lg-4 col-12">Мы используем подход на основе больших языковых моделей (LLM),
+          которые способны анализировать код с учётом контекста и находить потенциальные ошибки. Система интегрируется с GitLab
+          и запускается при каждом изменении кода.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card-box p-3 analyse-purple">
+            <h5>Полностью внутри контура компании</h5>
+            <ul class="mt-3 pl-3">
+              <li>Модель и сервис разворачиваются в вашей инфраструктуре</li>
+              <li>Данные кода не покидают пределы компании</li>
+              <li>Подходит для организаций с повышенными требованиями к безопасности</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card-box p-3 analyse-green">
+            <h5>С использованием отечественных LLM-провайдеров</h5>
+            <ul class="mt-3 pl-3">
+              <li>Поддержка GigaChat, MWS, YandexGPT</li>
+              <li>Данные обрабатываются в соответствии с локальными требованиями и стандартами</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card-box p-3 analyse-dark">
+            <h5>С использованием зарубежных LLM</h5>
+            <ul class="mt-3 pl-3">
+              <li>Подключение к API моделей мирового уровня</li>
+              <li>Максимально широкий спектр возможностей анализа и подсказок</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="mt-5 mb-3 d-flex">
+        <img src="assets/img/question.svg" alt="Question" class="pr-1">
+        Как это работает:
+      </h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item pl-0"><strong>GitLab Webhooks:</strong> при каждом обновлении кода GitLab
+          передает информацию об изменениях в AI Code Reviewer</li>
+        <li class="list-group-item pl-0"><strong>LLM:</strong> анализирует измененный участок кода и его
+          контекст, чтобы выявить возможные ошибки и предложить улучшения</li>
+        <li class="list-group-item pl-0"><strong>Обратная связь в GitLab:</strong> комментарии и рекомендации
+          прямо в merge request</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Блок 2: Преимущества -->
+  <section class="py-lg-4 py-3">
+    <div class="container">
+      <h2 class="text-center mb-5">Преимущества использования</h2>
+      <div class="row text-start">
+        <div class="col-md-3 mb-4">
+          <div class="card-box p-3 d-flex align-items-start">
+            <img src="assets/img/feedback.svg" alt="Feedback" class="my-1 mr-2">
+            <div>
+              <strong>Мгновенная обратная связь</strong>
+              <p>Проверка кода при каждом коммите</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card-box p-3 d-flex align-items-start">
+            <img src="assets/img/quality.svg" alt="Quality" class="my-1 mr-2">
+            <div>
+              <strong>Качество без компромиссов</strong>
+              <p>Выявляет ошибки до ручной проверки коллегами</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card-box p-3 d-flex align-items-start">
+            <img src="assets/img/integration.svg" alt="Integration" class="my-1 mr-2">
+            <div>
+              <strong>Интеграция в привычный процесс</strong>
+              <p>Без смены инструментов, прямо в GitLab</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card-box p-3 d-flex align-items-start">
+            <img src="assets/img/protect.svg" alt="Protect" class="my-1 mr-2">
+            <div>
+              <strong>Защита кодовой базы</strong>
+              <p>Снижает риск попадания проблемного кода в проект</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок 3: Для кого -->
+  <section class="py-lg-4 py-3">
+    <div class="container">
+      <h2 class="text-center mb-4">Для кого</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card-box p-3">
+            <strong>Для разработчиков:</strong>
+            <p>Моментальная обратная связь по изменениям кода, еще до ручной проверки</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-box p-3">
+            <strong>Для тимлидов:</strong>
+            <p>Меньше времени и усилий на проверку кода, выше уверенность в качестве перед слиянием</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-box p-3">
+            <strong>Для компаний:</strong>
+            <p>Стандартизация качества кода в CI/CD процессах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок 4: Демонстрация -->
+  <section class="gradient-box py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Посмотрите, как AI улучшает ревью вашей команды</h2>
+      <img src="assets/img/demo.png" alt="Demo AI Code Reviewer" class="img-fluid mb-4">
+      <div>
+        <button class="btn start-btn px-3 mr-3" data-toggle="modal" data-target="#send-modal1">Демо</button>
+        <button class="btn btn-gradient px-3" data-toggle="modal" data-target="#send-modal">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок 5: Технические возможности -->
+  <section class="py-lg-5 py-4">
+    <div class="container">
+      <h2 class="text-center mb-lg-5 mb-4">Технические возможности</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="card-box p-3 mb-3 mb-lg-4 d-flex align-items-center">
+            <img src="assets/img/gitlab.svg" alt="GitLab" class="mr-2">
+            <span>Полная интеграция через GitLab API и webhooks</span>
+          </div>
+          <div class="card-box p-3 mb-3 mb-lg-4 d-flex align-items-center">
+            <img src="assets/img/docker.svg" alt="Docker" class="mr-2">
+            <span>Работает в Docker-контейнере</span>
+          </div>
+          <div class="card-box p-3 mb-3 d-flex align-items-center">
+            <img src="assets/img/openai-icon.svg" alt="LLM" class="mr-2">
+            <span>Работа с любым LLM через OpenAI API</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="video-wrapper">
+            <video src="assets/img/demo-gif.mp4" autoplay loop muted playsinline></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Финальный блок -->
+  <section class="gradient-box py-5 text-center">
+    <div class="container mb-4 mb-lg-5">
+      <h2>Попробуйте AI Code Reviewer уже сегодня</h2>
+      <p class="mb-4">Ускорьте код-ревью, улучшите качество, сэкономьте время.</p>
+      <button class="btn btn-gradient px-3 mr-3" data-toggle="modal" data-target="#send-modal">Купить</button>
+      <button class="btn start-btn px-3" data-toggle="modal" data-target="#send-modal1">Демо</button>
+    </div>
+  </section>
+  <section class="my-3">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-6 text-lg-right text-center">
+          <img src="assets/img/logo-footer.svg" class="mr-2">
+          <a href="https://flexberry.ru/" target="_blank" class="footer-text">Flexberry Platform</a>, 2025г.
+        </div>
+        <div class="col-lg-6 text-lg-left text-center">
+          <a href="https://flexberry.ru/" target="_blank" class="footer-text">mail@flexberry.net</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="send-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Заявка на покупку</h2>
+          <button type="button" class="close ms-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe
+            src="https://forms.yandex.ru/u/68836a98068ff007bbcbaeb7?iframe=1" frameborder="0"
+            name="ya-form-68836a98068ff007bbcbaeb7" width="650"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="send-modal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Запрос на демонстрацию</h2>
+          <button type="button" class="close ms-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe
+            src="https://forms.yandex.ru/u/68836e76e010db079a22b9a9?iframe=1" frameborder="0"
+            name="ya-form-68836e76e010db079a22b9a9" width="650"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/bootstrap/jquery.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
